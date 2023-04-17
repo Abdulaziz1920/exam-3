@@ -1,0 +1,39 @@
+.menus_tab {
+  display: grid;
+  grid-template-columns: 33% 66%;
+  grid-column-gap: 36px;
+  .apmenu_custom {
+    background-color: $primary-background;
+    background: #bb2339;
+    border-radius: 20px;
+    .menus_apcustom {
+      padding: 0 0;
+    }
+    .ap-tab-menu-list li {
+      padding-bottom: 40px;
+      .link {
+        @include words($third-font, 600, 1rem, 0.05em, white);
+        margin-left: 40px;
+        padding: 10px 30px;
+        line-height: 175%;
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        border-radius: 100px;
+        .active_menus_tab {
+          color: blue;
+        }
+      }
+    }
+    .ap-tab-menu-list {
+      .menus_main_title {
+        @include words($first-font, 500, 2.5rem, 0.04em, white);
+        padding: 54px 0px 40px 40px;
+        line-height: 54px;
+      }
+    }
+  }
+}
+
+
+
+

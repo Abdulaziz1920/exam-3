@@ -1,0 +1,73 @@
+// ---------------------------
+@import "base/reset";
+@import "base/typography";
+// ---------------------------
+
+// ---------------------------
+@import "abstracts/container";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+// ---------------------------
+
+// ---------------------------
+@import "components/buttons";
+@import "components/carousel";
+@import "components/star";
+@import "components/aptab";
+@import "components/modal";
+@import "components/forms";
+@import "components/app_tab";
+@import "components/loading";
+// ---------------------------
+@import "pages/home";
+@import "pages/news";
+@import "pages/about";
+@import "pages/menu";
+@import "pages/contact";
+// ---------------------------
+
+body {
+  background-color: $primary-color;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.navbar-shrink {
+  padding: 10px 0 !important;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#backtop {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9900;
+  font-size: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 1s;
+}

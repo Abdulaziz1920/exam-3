@@ -1,0 +1,107 @@
+.accordion-custom {
+  .accordion-button {
+    &::after {
+      background-image: url("../images/plus.svg");
+    }
+    &:not(.collapsed)::after {
+      background-image: url("../images/minus.svg");
+    }
+  }
+}
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.ap-tab-list {
+  @include flex(center);
+}
+
+.ap-tab-link {
+  padding: 8px 25px;
+  font-family: $third-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  border: 1px solid #bb2339;
+  border-radius: 100px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.ap-tab-link.active-tab {
+  transition: 0.5s;
+  color: #ffffff;
+  background: #bb2339;
+  border: 1px solid #bb2339;
+  border-radius: 100px;
+}
+
+ol,
+ul {
+  padding-left: 0px !important;
+}
+
+.ap__list__custom {
+  padding: 70px 0 60px;
+}
+
+.card__row__custom {
+  @include grid(4);
+  grid-gap: 30px 20px;
+  .card {
+    background: #ffffff;
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    border-radius: 14px;
+    img {
+      width: 100%;
+      padding: 20px 0 10px;
+    }
+    h2 {
+      font-family: $third-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 25px;
+      text-align: center;
+      color: $second-color;
+    }
+    h3 {
+      padding: 30px 0 40px;
+      font-family: $third-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 33px;
+      text-align: center;
+      color: $primary-background;
+    }
+  }
+}

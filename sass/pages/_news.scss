@@ -1,0 +1,91 @@
+// ----------------------------------------------------
+.news {
+  padding-bottom: 60px !important;
+  .breadcrumb_custom {
+    padding-top: 70px;
+    a {
+      @include words($third-font, 400, 0.875rem, 0.03em, #b0b0b0);
+    }
+    .active {
+      color: #bb2339;
+    }
+  }
+  .news__title {
+    text-align: center;
+    h1 {
+      @include words($third-font, 500, 4rem, 0.03em, #242424);
+      //   line-height: 130%;
+    }
+  }
+}
+
+// ----------------------------------------------------
+.news__card__box {
+  @include grid(3);
+  grid-gap: 40px 35px;
+  .news__item {
+    background: #ffffff;
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    border-radius: 14px;
+    img {
+      width: 100%;
+    }
+    h2 {
+      @include words($first-font, 500, 1.5rem, 0, #242424);
+      padding: 20px 58px 10px 20px;
+      line-height: 32px;
+      text-transform: capitalize;
+    }
+    p {
+      @include words($third-font, 400, 0.875rem, 0em, #aaaaaa);
+      padding: 0 26px 20px 20px;
+      line-height: 24px;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px 30px 20px;
+      .left {
+        a {
+          @include words($first-font, 700, 1rem, 0.04em, #bb2339);
+          line-height: 16px;
+          text-decoration: none;
+        }
+      }
+      .right {
+        h5 {
+          @include words($third-font, 400, 0.875rem, 0em, #242424);
+          opacity: 0.5;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}
+
+.news_second_btn {
+  padding: 70px 0 147px;
+  text-align: center;
+  button {
+    @include words($first-font, 700, 1rem, 0.04em, #242424);
+    padding: 8px 32px;
+    line-height: 175%;
+    border-radius: 100px;
+    border: 1px solid #bb2339;
+    background-color: transparent;
+  }
+}
+
+// ----------------------------------------------------
+
+@media (max-width: 800px) {
+  .news__card__box {
+    @include grid(2);
+  }
+}
+
+@media (max-width: 500px) {
+  .news__card__box {
+    @include grid(1);
+  }
+}

@@ -1,0 +1,117 @@
+.apps {
+  padding: 66px 0 0;
+  padding-bottom: 100px;
+}
+
+.appcustomer {
+  @include grid(1);
+  grid-gap: 35px;
+  background-color: #bb2339;
+  border-radius: 20px;
+  h1 {
+    @include words($first-font, 500, 2.5rem, 0em, white);
+    line-height: 54px;
+  }
+}
+
+.menu_row_custom {
+  @include grid(2);
+  grid-gap: 52px 32px;
+}
+
+.menus_links {
+  @include words($third-font, 600, 1rem, 0.05em, white);
+  padding: 10px 30px;
+  line-height: 175%;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
+.menus_links.active-tab {
+  color: #242424;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+
+.app__row__custom {
+  @include grid(3);
+  grid-gap: 40px 32px;
+}
+// ------------------------------------------
+
+.icon {
+  img {
+    width: 100%;
+  }
+}
+
+.maxs {
+  --bg: #f7f7f8;
+  --hover-bg: #ffe5f4;
+  --hover-text: #e50087;
+  max-width: 100%;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.maxs > :not(span) {
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.maxs > strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -0.035em;
+}
+
+.maxs span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.maxs:hover span {
+  top: 0;
+  font-size: 1.2em;
+}
+
+.maxs:hover {
+  background: $primary-background;
+}
+
+.maxs:hover > div,
+.maxs:hover > strong {
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .appcustomer {
+    padding-left: 40px !important;
+  }
+}

@@ -1,0 +1,29 @@
+.slick-dots li.slick-active button:before {
+  width: 50px;
+}
+
+.popular__slick__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: black !important;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: $primary-background !important;
+}
+
+#second__backround .popular .popular__slick__item {
+  position: relative;
+}
+
+

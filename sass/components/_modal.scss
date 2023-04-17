@@ -1,0 +1,29 @@
+#video {
+    background-image: url(../../assets/image/Video.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+  
+    .icon {
+      text-align: center;
+      padding: 322px 0;
+      i {
+        font-size: 120px;
+        transition: 0.3s;
+        color: white;
+  
+        &:hover {
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+    .btn-primary {
+      background-color: transparent !important;
+      border: transparent !important;
+    }
+  }
+  .modal-dialog {
+    max-width: 800px !important;
+  }

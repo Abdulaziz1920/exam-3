@@ -1,0 +1,51 @@
+.customer {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 0 !important;
+  transition: 0.3s;
+}
+
+.navcustom ul {
+  margin-left: -27px !important;
+}
+
+#backround {
+  background-color: #bb2339 !important;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 1.125rem;
+}
+
+.navcust {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff !important;
+}
+
+.nav_btn {
+  padding: 10px 40px !important;
+  width: 100% !important;
+
+  border: 1px solid #ffffff !important;
+  border-radius: 100px;
+}
+
+.navbar-shrink {
+  padding: 0px 0 !important;
+}
+
+@media (max-width: 815px) {
+  .container {
+    width: 82% !important;
+  }
+}

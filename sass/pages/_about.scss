@@ -1,0 +1,37 @@
+.about {
+  text-align: center;
+  .about__title {
+    h1 {
+      @include words($first-font, 500, 4rem, 0.03em, #242424);
+      line-height: 130%;
+      text-align: center;
+    }
+    .top_text {
+      @include words($third-font, 400, 1.25rem, 0.04em, #242424);
+      padding: 40px 0 30px;
+      opacity: 0.8;
+      text-align: justify;
+      line-height: 32px;
+    }
+    .about_img {
+      width: 100%;
+    }
+    .bottom_text {
+      @include words($third-font, 400, 1.25rem, 0.04em, #242424);
+      padding: 30px 0 0;
+      opacity: 0.8;
+      text-align: justify;
+      line-height: 32px;
+    }
+  }
+}
+
+.about_breadcrumb {
+  padding-top: 187px;
+  a {
+    @include words($third-font, 400, 0.875rem, 0.03em, #b0b0b0);
+  }
+  .active {
+    color: #bb2339 !important;
+  }
+}

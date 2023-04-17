@@ -1,0 +1,19 @@
+@mixin words($ff, $fw, $fs, $ls, $fontcolor) {
+  font-family: $ff;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $fontcolor;
+}
+
+@mixin grid($num) {
+  display: grid;
+  grid-template-columns: repeat($num, 1fr);
+}
+
+@mixin flex($ai) {
+  display: flex;
+  justify-content: space-between;
+  align-items: $ai;
+}
